@@ -61,41 +61,118 @@ li{
   
   
 }
+
 .hero-banner{
   background-image: url(./francesco-ungaro-JA-SFjT1FS0-unsplash.jpg);
   background-size: cover;
   height: 500px;
 }
+
 #quote{
   position: absolute; left: 80px; top: 100px;
   color: aliceblue;
   font-family: Arial, Helvetica, sans-serif;
 }
-#aboutme {
+
+#about {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items:stretch ;
+  padding-top: 30px;
+  margin: 40px;
+  padding-right: 40px;
+  
+  
+}
+#aboutme{
+  padding: 10PX;
+  
+}
+#aboutmetext {
+  margin-left: 30px;
+  border-left: var(--prim) solid 10px;
+  padding:10px;
+}
+
+#work {
+  display: flex;
+  justify-content: space-between;
+  align-items:stretch ;
+  padding-top: 30px;
+  margin: 40px;
+  padding-right: 40px;
+
+}
+
+#workheading {
+  margin-right: 50px;
 }
 
 .grid {
+  width: 70%;
   margin: 0px 5%;
   display: grid;
-  grid-template-rows: 300px 300px 300px;
+  grid-template-rows: 200px 200px 200px;
   grid-template-columns: 300px 300px;
   grid-template-areas:
   "p1 p1" 
   "p1 p1"
   "p2 p3"
   ;
+  
+  
 }
 #project1{
   grid-area: p1;
-  background-image: url(./francesco-ungaro-JA-SFjT1FS0-unsplash.jpg);
+  background-image: url(./daniel-korpai-iopITwyUcTA-unsplash.jpg);
+  background-size: cover;
+  
+}
+#project1 div{
+  background-color: var(--prim);
+  color: var(--sec);
+  padding: 10px;
 }
 #project2{
   grid-area: p2;
-  background-image: url(./francesco-ungaro-JA-SFjT1FS0-unsplash.jpg);
+  background-image: url(./austris-augusts-IlsN218WQEg-unsplash.jpg);
+  background-size: cover;
+}
+#project2 div{
+  background-color: var(--prim);
+  color: var(--sec);
+  padding: 10px;
 }
 #project3{
   grid-area: p3;
-  background-image: url(./francesco-ungaro-JA-SFjT1FS0-unsplash.jpg);
+  background-image: url(./christina-wocintechchat-com-wLiP-R6Vd2g-unsplash.jpg);
+  background-size: cover;
+}
+#project3 div{
+  background-color: var(--prim);
+  color: var(--sec);
+  padding: 10px;
+}
+
+#contact{
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--prim);
+  color: var(--sec);
+  padding: 10px;
+}
+
+@media screen and (max-width:800px){
+  .grid{
+    width: 70%;
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100px 100px;
+  grid-template-areas:
+  "p1 p1" 
+  "p1 p1"
+  "p2 p3"
+  ;
+  }
 }
