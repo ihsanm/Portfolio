@@ -2,6 +2,7 @@
   --prim:#001B2E;
   --sec:#EBEBEB;
 }
+/* css reset */
 * {
   box-sizing: border-box;
 }
@@ -25,9 +26,11 @@ h6 {
 p {
   margin: 0;
 }
+/* changing color of background */
 body{
   background-color: var(--sec);
 }
+/*nav and header styling  */
 nav {
   background-color: #001B2E;
   display: flex;
@@ -61,6 +64,7 @@ li{
   
   
 }
+/* hero styling */
 
 .hero-banner{
   background-image: url(./francesco-ungaro-JA-SFjT1FS0-unsplash.jpg);
@@ -73,7 +77,7 @@ li{
   color: aliceblue;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+/* about me section styling */
 #about {
   display: flex;
   justify-content: center;
@@ -93,7 +97,7 @@ li{
   border-left: var(--prim) solid 10px;
   padding:10px;
 }
-
+/* work section styling */
 #work {
   display: flex;
   justify-content: space-between;
@@ -107,7 +111,7 @@ li{
 #workheading {
   margin-right: 50px;
 }
-
+/* grid styling */
 .grid {
   width: 70%;
   margin: 0px 5%;
@@ -153,7 +157,7 @@ li{
   color: var(--sec);
   padding: 10px;
 }
-
+/* contact section styling */
 #contact{
   display: flex;
   justify-content: space-between;
@@ -161,7 +165,7 @@ li{
   color: var(--sec);
   padding: 10px;
 }
-
+/* media query to change size for smaller screens */
 @media screen and (max-width:800px){
   .grid{
     width: 70%;
