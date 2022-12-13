@@ -130,27 +130,31 @@ li{
   grid-area: p1;
   background-image: url(./daniel-korpai-iopITwyUcTA-unsplash.jpg);
   background-size: cover;
-  
+  cursor: pointer;
 }
 #project1 div{
   background-color: var(--prim);
   color: var(--sec);
   padding: 10px;
+
 }
 #project2{
   grid-area: p2;
   background-image: url(./austris-augusts-IlsN218WQEg-unsplash.jpg);
   background-size: cover;
+  cursor: pointer;
 }
 #project2 div{
   background-color: var(--prim);
   color: var(--sec);
   padding: 10px;
+  
 }
 #project3{
   grid-area: p3;
   background-image: url(./christina-wocintechchat-com-wLiP-R6Vd2g-unsplash.jpg);
   background-size: cover;
+  cursor: pointer;
 }
 #project3 div{
   background-color: var(--prim);
