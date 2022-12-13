@@ -1,0 +1,101 @@
+:root{
+  --prim:#001B2E;
+  --sec:#EBEBEB;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+body{
+  background-color: var(--sec);
+}
+nav {
+  background-color: #001B2E;
+  display: flex;
+  justify-content:flex-end;
+  
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+  
+}
+
+li{
+  float: right;
+  
+}
+.navbar {
+  padding: 12px;
+  background-color: var(--prim);
+  color: aliceblue;
+  
+}
+
+.name {
+  display: flex; 
+  background-color: var(--prim);
+  color: aliceblue;
+  width: 100%;
+  
+  
+}
+.hero-banner{
+  background-image: url(./francesco-ungaro-JA-SFjT1FS0-unsplash.jpg);
+  background-size: cover;
+  height: 500px;
+}
+#quote{
+  position: absolute; left: 80px; top: 100px;
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#aboutme {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 300px 300px;
+  grid-template-areas:
+  "p1 p1" 
+  "p1 p1"
+  "p2 p3"
+  ;
+}
+#project1{
+  grid-area: p1;
+  background-image: url(./francesco-ungaro-JA-SFjT1FS0-unsplash.jpg);
+}
+#project2{
+  grid-area: p2;
+  background-image: url(./francesco-ungaro-JA-SFjT1FS0-unsplash.jpg);
+}
+#project3{
+  grid-area: p3;
+  background-image: url(./francesco-ungaro-JA-SFjT1FS0-unsplash.jpg);
+}
